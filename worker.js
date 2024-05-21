@@ -49,8 +49,8 @@ export default {
 								"Content-Type": "application/json;charset=utf-8",
 							},
 						});
-					}
-					case `/${userID_Path}`: {
+					};
+					case `/akunvless`: {
 						const วเลสConfig = getวเลสConfig(userID, request.headers.get('Host'));
 						return new Response(`${วเลสConfig}`, {
 							status: 200,
